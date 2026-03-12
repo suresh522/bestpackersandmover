@@ -28,10 +28,10 @@ const ContactForm = () => {
     try {
 
       await emailjs.sendForm(
-        "service_m9x8abc",      // your service ID
-        "template_8abc123",     // your template ID
+        "service_amf0cno",      // your service ID
+        "template_xkf1omg",     // your template ID
         formRef.current,
-        "F8HJKL89XYZ"           // your public key
+        "bVUNR2EVKs9OJduAi"           // your public key
       );
 
       setIsSubmitted(true);

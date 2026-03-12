@@ -7,7 +7,7 @@ const keyServices = [
   { icon: Building2, type: "Office Shifting", meaning: "Corporate relocation with minimal downtime" },
   { icon: Truck, type: "Vehicle Transport", meaning: "Two-wheeler & car transport across India" },
   { icon: Warehouse, type: "Storage & Warehousing", meaning: "Temporary storage in secure warehouses" },
-  { icon: Package, type: "Packing / Unpacking", meaning: "Safe packing & unpacking with premium materials" },
+  { icon: Package, type: "Packing", meaning: "Safe packing & unpacking with premium materials" },
 ];
 
 const ServicesSummary = () => {
