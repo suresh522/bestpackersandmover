@@ -76,7 +76,7 @@ export const allServices: ServiceData[] = [
       "Electronics & TV packing",
       "Loading & unloading",
       "Safe transportation",
-      "Unpacking & rearranging",
+      "Rearranging",
     ],
     features: [
       { title: "Door-to-Door Service", description: "Complete shifting from your old home to the new one without hassle." },
@@ -137,8 +137,8 @@ export const allServices: ServiceData[] = [
   },
   {
     id: 4,
-    slug: "packing-unpacking",
-    title: "Packing & Unpacking",
+    slug: "packing",
+    title: "Packing",
     shortTitle: "Packing",
     icon: Package,
     description: "Professional packing to protect items during transport.",
@@ -151,7 +151,7 @@ export const allServices: ServiceData[] = [
       "Carton box packing",
       "Fragile item protection",
       "Wooden crating for valuables",
-      "Unpacking at destination",
+      "packing at destination",
     ],
     features: [
       { title: "Quality Materials", description: "We use the best packing materials available in the market." },

@@ -233,7 +233,7 @@ const processSteps = [
   { step: "03", title: "Professional Packing", desc: "Our experts pack all items with premium materials." },
   { step: "04", title: "Safe Transport", desc: "Secure loading and GPS-tracked transportation." },
   { step: "05", title: "Timely Delivery", desc: "On-time delivery at your new destination." },
-  { step: "06", title: "Unpacking & Setup", desc: "Careful unpacking and arrangement at your new place." },
+  { step: "06", title: "Local Shifting", desc: "Careful local shifting and arrangement at your new place." },
 ];
 
 const WorkingProcess = () => {

@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const domain = "https://bestpackersandmover.in"; // your domain
+const domain = "https://bestpackersandmover.in";
+
+const today = new Date().toISOString().split("T")[0];
 
 // Static routes
 const routes = [
@@ -12,7 +14,7 @@ const routes = [
   "/contact",
 ];
 
-// Dynamic service pages
+// Dynamic services
 const serviceSlugs = [
   "household-shifting",
   "office-relocation",
@@ -22,10 +24,14 @@ const serviceSlugs = [
   "local-shifting"
 ];
 
-// Convert slugs to routes
+
+
+
 const serviceRoutes = serviceSlugs.map((slug) => `/services/${slug}`);
 
-// Merge all routes
+
+
+
 const allRoutes = [...routes, ...serviceRoutes];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -35,6 +41,7 @@ ${allRoutes
     (route) => `
   <url>
     <loc>${domain}${route}</loc>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${route === "/" ? "1.0" : "0.8"}</priority>
   </url>`
@@ -42,7 +49,9 @@ ${allRoutes
   .join("")}
 </urlset>`;
 
-// write sitemap file
+
+
+
 const publicPath = path.resolve(__dirname, "public", "sitemap.xml");
 
 fs.writeFileSync(publicPath, sitemap);
